@@ -1,0 +1,17 @@
+{
+  "name": "part-1",
+  "version": "1.0.0",
+  "description": "Part 1: Simple web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Helen Yau",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "nodemon": "^1.11.0"
+  }
+}
