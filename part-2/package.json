@@ -1,0 +1,21 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "Part 2: Command Line Hotel Management System",
+  "main": "hotel.js",
+  "scripts": {
+    "db:create": "createdb hotel_db",
+    "db:drop": "dropdb hotel_db",
+    "db:schema": "psql hotel_db < ./database/schema.sql",
+    "db:seed": "psql hotel_db < ./database/load-data.sql",
+    "db:reset": "npm run db:drop && npm run db:create && npm run db:schema && npm run db:seed",
+    "test": "mocha --recursive ./database/"
+  },
+  "author": "Helen Yau",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "pg": "^7.1.2"
+  }
+}

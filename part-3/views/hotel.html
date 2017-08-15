@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel</title>
+
+    <link rel="stylesheet" href="../public/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Hotel</h1>
+    </header>
+
+    <div class="content">
+      <h1>Rooms</h1>
+      <table class="room-list">
+        <thead>
+          <th>Room #</th>
+          <th>Capacity</th>
+          <th>Rate / Night</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr id="room2B">
+            <td>2B</td>
+            <td>4</td>
+            <td>$59.99</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room2A">
+            <td>2A</td>
+            <td>4</td>
+            <td>$59.99</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room3A">
+            <td>3A</td>
+            <td>2</td>
+            <td>$45.00</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room3B">
+            <td>3B</td>
+            <td>2</td>
+            <td>$45.00</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room3C">
+            <td>3C</td>
+            <td>3</td>
+            <td>$52.64</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room4A">
+            <td>4A</td>
+            <td>4</td>
+            <td>$59.99</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+          <tr id="room4B">
+            <td>4B</td>
+            <td>4</td>
+            <td>$59.99</td>
+            <td>
+              <button class="hotelrooms">Book</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Booking</h3>
+          <div class="container">
+            <div class="inner">
+              <h4 id="all-rooms" class="child">Room</h4>
+              <h4 id="price-per-night" class="child">/night</h4>
+            </div>
+          </div>
+          <p>Check-in: <input type="date" id="bookingDate" /></p>
+          <p>Nights: <input type="number" id="nights" name="nights" min="1"></p>
+          <p>Total: $<span id="totalPrice">0</span></p>
+          <button id="confirm">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="../public/hotel.js"></script>
+  </body>
+</html>
