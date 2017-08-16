@@ -20,6 +20,7 @@
   - to list only available rooms run the command:
 
     `"$ node hotel.js rooms --available"`
+
   - to list all current and future bookings run the command:
 
     `"$ node hotel.js bookings"`

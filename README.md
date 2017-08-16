@@ -19,11 +19,11 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 ## General Requirements
 
-- [ ] __10:__ Solution is in a public repository called `phase-3-challenge-c`.
-- [ ] __10:__ Solution repository has 3 folders: `part-1`, `part-2`, and `part-3`.
-- [ ] __10:__ Solution repository includes a `.gitignore` ignoring files that don't shouldn't be committed (e.g. `node_modules/`, `*.log` files).
-- [ ] __10:__ Parts 1 and 2 have their own `package.json` specifying dependencies.
-- [ ] __20:__ Git history shows frequent commits.
+- [X] __10:__ Solution is in a public repository called `phase-3-challenge-c`.
+- [X] __10:__ Solution repository has 3 folders: `part-1`, `part-2`, and `part-3`.
+- [X] __10:__ Solution repository includes a `.gitignore` ignoring files that don't shouldn't be committed (e.g. `node_modules/`, `*.log` files).
+- [X] __10:__ Parts 1 and 2 have their own `package.json` specifying dependencies.
+- [X] __20:__ Git history shows frequent commits.
 
 ## Part 1: Simple web app
 
@@ -88,11 +88,11 @@ response content type: application/json
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-1/` folder
-- [ ] __10:__ All dependencies are specified in a `package.json` file
-- [ ] __10:__ Web server can be started with `npm start` command
-- [ ] __20:__ GET requests to the `/api/shout/:word` route responds with  content type `application/text`, as described in the example above
-- [ ] __80:__ POST requests to the `/api/array/merge` merge the two arrays provided in the request body and responds with the result. An invalid input should return a 400 response.
+- [X] __10:__ All files are stored under the `part-1/` folder
+- [X] __10:__ All dependencies are specified in a `package.json` file
+- [X] __10:__ Web server can be started with `npm start` command
+- [X] __20:__ GET requests to the `/api/shout/:word` route responds with  content type `application/text`, as described in the example above
+- [X] __80:__ POST requests to the `/api/array/merge` merge the two arrays provided in the request body and responds with the result. An invalid input should return a 400 response.
 
 ## Part 2: Command Line Hotel Management System
 
@@ -185,27 +185,27 @@ $ node hotel.js bookings 3B
 ```
 
 ### Requirements
-- [ ] __10:__ All files are stored under the `part-2/` folder
-- [ ] __10:__ Database schema (all `CREATE TABLE` statements) is defined in a file `schema.sql`
-- [ ] __10:__ SQL statements to insert seed data into all tables is added to the file `load-data.sql` (either create your own seed data or use the files provided: [rooms.csv][hotel-rooms] | [bookings.csv][hotel-bookings] | [guests.csv][hotel-guests])
-- [ ] __10:__ All database query functions are written in a file `database.js`, and tests for queries are written in a file `database_test.js`
-- [ ] __10:__ Tests can be run with the command `$ npm test`
+- [X] __10:__ All files are stored under the `part-2/` folder
+- [X] __10:__ Database schema (all `CREATE TABLE` statements) is defined in a file `schema.sql`
+- [X] __10:__ SQL statements to insert seed data into all tables is added to the file `load-data.sql` (either create your own seed data or use the files provided: [rooms.csv][hotel-rooms] | [bookings.csv][hotel-bookings] | [guests.csv][hotel-guests])
+- [X] __10:__ All database query functions are written in a file `database.js`, and tests for queries are written in a file `database_test.js`
+- [X] __10:__ Tests can be run with the command `$ npm test`
 
 User Stories: Ensure that your schema design can satisfy the following scenarios
-- [ ] __10__: As a hotel manager I can get a list of all guests
-- [ ] __10__: As a hotel manager I can get a list of all rooms
-- [ ] __10__: As a hotel manager I can see which rooms have been booked by which guests, along with their check-in and check out dates
+- [X] __10__: As a hotel manager I can get a list of all guests
+- [X] __10__: As a hotel manager I can get a list of all rooms
+- [X] __10__: As a hotel manager I can see which rooms have been booked by which guests, along with their check-in and check out dates
 
 Command line interface requirements
-- [ ] __10__: There is a Node script called `hotel.js` that can be called with different commands
-- [ ] __20__: Command `guests` has been implemented to the above specifications
-- [ ] __30__: Command `rooms` has been implemented to the above specifications
-- [ ] __30__: Command `bookings` has been implemented to the above specifications
+- [X] __10__: There is a Node script called `hotel.js` that can be called with different commands
+- [X] __20__: Command `guests` has been implemented to the above specifications
+- [X] __30__: Command `rooms` has been implemented to the above specifications
+- [X] __30__: Command `bookings` has been implemented to the above specifications
 
 Write tests with [Mocha](https://mochajs.org/) + [Chai](http://chaijs.com/) in `database_test.js` that assert:
-- [ ] __20__: The database function for the command `guests` is tested
-- [ ] __20__: The database function for the command `rooms` is tested
-- [ ] __20__: The database function for the command `bookings` is tested
+- [X] __20__: The database function for the command `guests` is tested
+- [X] __20__: The database function for the command `rooms` is tested
+- [X] __20__: The database function for the command `bookings` is tested
 
 ## Part 3: Web interface for hotel manager
 
@@ -225,14 +225,14 @@ Clicking on the "Book" button for any room opens the "Booking" modal.
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-3/` folder
-- [ ] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
-- [ ] __10:__ HTML, CSS, and JS are separated into their own files.
-- [ ] __20:__ Clicking on the "Book" button for a room will open the "Booking" modal with the room info automatically inserted (room number and nightly rate)
-- [ ] __20:__ Users can select a check-in date (using an HTML5 date input) and a number of nights
-- [ ] __20:__ The "Total" in the "Booking" modal shows the total sum (formula: nightly rate multiplied by number of nights)
-- [ ] __20:__ Whenever the number of nights changes, the total is updated automatically
-- [ ] __20:__ Clicking on the "X" button in the "Booking" modal closes the modal
+- [X] __10:__ All files are stored under the `part-3/` folder
+- [X] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
+- [X] __10:__ HTML, CSS, and JS are separated into their own files.
+- [X] __20:__ Clicking on the "Book" button for a room will open the "Booking" modal with the room info automatically inserted (room number and nightly rate)
+- [X] __20:__ Users can select a check-in date (using an HTML5 date input) and a number of nights
+- [X] __20:__ The "Total" in the "Booking" modal shows the total sum (formula: nightly rate multiplied by number of nights)
+- [X] __20:__ Whenever the number of nights changes, the total is updated automatically
+- [X] __20:__ Clicking on the "X" button in the "Booking" modal closes the modal
 
 [hotel-bookings]: https://gist.github.com/lg-bot/1ea5b9cb6dfab086bcb2db3d144e81d4#file-bookings-csv
 [hotel-guests]: https://gist.github.com/lg-bot/1ea5b9cb6dfab086bcb2db3d144e81d4#file-guests-csv
