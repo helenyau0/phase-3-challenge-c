@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS guests;
+
+CREATE TABLE guests (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(250),
+  email VARCHAR(250)
+);
+
+DROP TABLE IF EXISTS rooms;
+
+CREATE TABLE rooms (
+  id SERIAL PRIMARY KEY,
+  room_number VARCHAR(250),
+  capacity INTEGER
+);
+
+DROP TABLE IF EXISTS bookings;
+
+CREATE TABLE bookings (
+  id SERIAL PRIMARY KEY,
+  room_id INTEGER REFERENCES rooms(id) ON UPDATE CASCADE ON DELETE CASCADE,
+  guest_id INTEGER REFERENCES guests(id) ON UPDATE CASCADE ON DELETE CASCADE,
+  check_in DATE,
+  check_out DATE
+);
